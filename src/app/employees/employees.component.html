@@ -1,1 +1,21 @@
-<p>employees works!</p>
+<mat-table class="lessons-table mat-elevation-z8 contenedor" [dataSource]="dataSource">
+  <ng-container matColumnDef="num">
+    <mat-header-cell *matHeaderCellDef>No.</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{element.id}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
+    <mat-cell class="description-cell" *matCellDef="let element">{{element.name + " " + element.last_name}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="birthday">
+    <mat-header-cell *matHeaderCellDef>Fecha de nacimiento</mat-header-cell>
+    <mat-cell class="duration-cell" *matCellDef="let element">{{element.birthday | date:'dd-MM-yyyy'}}</mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
+
+<mat-paginator [pageSize]="10" [pageSizeOptions]="[20, 30, 60,100]" showFirstLastButtons style="background: none;"></mat-paginator>

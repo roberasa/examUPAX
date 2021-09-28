@@ -11,6 +11,13 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatIconModule} from "@angular/material/icon";
 import {MatListModule} from "@angular/material/list";
+import { MatTableModule } from '@angular/material/table';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatCardModule} from "@angular/material/card";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import { MatTableExporterModule} from "mat-table-exporter";
+import {HttpClientModule} from '@angular/common/http';
+
 
 
 @NgModule({
@@ -27,7 +34,13 @@ import {MatListModule} from "@angular/material/list";
     MatCarouselModule.forRoot(),
     MatTabsModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatTableExporterModule,
+    HttpClientModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
