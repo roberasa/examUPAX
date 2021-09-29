@@ -1,3 +1,12 @@
+<div class="header-btn">
+  <mat-form-field class="search-btn" appearance="fill">
+    <mat-label>Ingrese criterio de busqueda</mat-label>
+    <input [(ngModel)]="filterValue" matInput (ngModelChange)="applyFilter()">
+  </mat-form-field>
+  <div class="cont-btn-add">
+    <button mat-flat-button color="accent" (click)="registerEmployee()"><mat-icon>person_add_alt</mat-icon> Agregar empleado</button>
+  </div>
+</div>
 <mat-table class="lessons-table mat-elevation-z8 contenedor" [dataSource]="dataSource">
   <ng-container matColumnDef="num">
     <mat-header-cell *matHeaderCellDef>No.</mat-header-cell>

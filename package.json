@@ -23,6 +23,7 @@
     "@ngmodule/material-carousel": "^0.6.0",
     "mat-table-exporter": "^10.2.3",
     "rxjs": "~6.6.0",
+    "sweetalert2": "^11.1.7",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
   },

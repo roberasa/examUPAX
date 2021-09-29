@@ -1,1 +1,42 @@
-<p>groups works!</p>
+<mat-grid-list cols="2" cdkDropListGroup>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Grupos</mat-card-title>
+      <mat-card-content>
+
+        <div
+          cdkDropList
+          #groupsList="cdkDropList"
+          [cdkDropListData]="groupsArr"
+          [cdkDropListConnectedTo]="[employeesList]"
+          [cdkDropListEnterPredicate]="noReturnPredicate"
+        (cdkDropListDropped)="drop($event)">
+          <div class="example-box" *ngFor="let item of groupsArr"  [cdkDragData]="item" (cdkDragExited)="dragExited($event)"  cdkDrag>{{item.name}}</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Empleados asociados al grupo</mat-card-title>
+      <mat-card-content>
+        <div
+          cdkDropList
+          #employeesList="cdkDropList"
+          [cdkDropListData]="employesGroup"
+          [cdkDropListConnectedTo]="[groupsList]"
+          (cdkDropListDropped)="drop($event)">
+
+        <div class="example-box" *ngFor="let item of employesGroup" cdkDrag>{{item.name}}</div>
+          <mat-selection-list #employee>
+            <mat-list-option *ngFor="let employee of listEmployees">
+              {{employee.name}}
+            </mat-list-option>
+          </mat-selection-list>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+  </mat-grid-tile>
+</mat-grid-list>

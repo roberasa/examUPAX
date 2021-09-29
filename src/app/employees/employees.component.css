@@ -1,8 +1,27 @@
-table {
-  width: 100%;
-}
-
 .contenedor {
   margin:1rem;
   padding: 1rem;
 }
+
+.search-btn{
+  margin: 1rem;
+  width: 40vw;
+  padding: inherit;
+  top: 3vh;
+  width: 100%;
+}
+
+.cont-btn-add{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: right;
+  padding: 1rem;
+}
+.header-btn{
+  width: 100%;
+  display: flex;
+}
+
+
+

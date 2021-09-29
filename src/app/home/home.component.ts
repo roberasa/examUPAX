@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  slides = [ {'image': 'https://c.pxhere.com/photos/77/20/flowers_sky_blue_nature_blossom_bloom_spring_summer-687782.jpg!d'},
-             {'image': 'https://c.pxhere.com/photos/81/f7/plant_nature_live-622894.jpg!d'},
-             {'image': 'https://c.pxhere.com/photos/68/a1/bee_flower_macro_summer_nature_insect_pollination_pollen-536458.jpg!d'},
-             {'image': 'https://c.pxhere.com/photos/cc/59/flowers_photographed_from_below_gegenlichtaufnahme_back_light_sunbeam_sun_lighting_spring-686247.jpg!d'},
-             {'image': 'https://c.pxhere.com/photos/6a/5c/flower_cherry_spring_spring_flowers_bloom_cherry_blossom-1412238.jpg!d'}];
+  slides = [ {'image': 'https://c.pxhere.com/photos/ca/7b/insect_macro_bug_nature_animal_detailed_colors-1292486.jpg!d'},
+             {'image': 'https://c.pxhere.com/photos/29/c7/flower_purple_lical_blosso_beautiful_beauty_bloom_blooming-1328279.jpg!d'},
+             {'image': 'https://c.pxhere.com/photos/33/56/kingfisher_bird_wildlife_macro_closeup_portrait_colorful_colors-1189071.jpg!d'},
+             {'image': 'https://c.pxhere.com/photos/a4/b4/marguerite_daisy_beautiful_beauty_bloom_blooming_blossom_blue_background-1328280.jpg!d'},
+             {'image': 'https://c.pxhere.com/photos/e4/f3/flower_beautiful_beauty_bloom_blooming_blossom_botanical_botany-1231118.jpg!d'}];
 
 
   constructor() { }

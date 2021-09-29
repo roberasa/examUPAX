@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   baseUrl: 'https://6edeayi7ch.execute-api.us-east-1.amazonaws.com/v1/examen',
   urls: {
+    groups: "/groups/berenice_ramirez",
     employees: "/employees/berenice_ramirez",
     employeesByGroup: "/employees/berenice_ramirez/getByGroup"
   }
